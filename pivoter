@@ -1,4 +1,4 @@
-${JAVA_HOME}/bin/java -Xmx4g -cp lib/*:bin Pivoter $1
+${JAVA_HOME}/bin/java -Xmx4g -classpath "target/*:target/dependency/*" Pivoter $1
 
 if [ "$?" == "255" ] ; then
    echo config example:
