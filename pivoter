@@ -1,0 +1,7 @@
+${JAVA_HOME}/bin/java -Xmx4g -cp lib/*:bin Pivoter $1
+
+if [ "$?" == "255" ] ; then
+   echo config example:
+   echo ''
+   cat test.csv.properties
+fi
